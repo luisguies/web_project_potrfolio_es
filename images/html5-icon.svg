@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="8" fill="#E34F26"/>
+  <path d="M24 20L28 85L60 95L92 85L96 20H24Z" fill="#EF652A"/>
+  <path d="M60 88L60 30L88 30L85 82L60 88Z" fill="#EBEBEB"/>
+  <path d="M60 30L32 30L33 50H60V30Z" fill="#FFFFFF"/>
+  <path d="M60 50H35L36 65H60V50Z" fill="#FFFFFF"/>
+  <text x="60" y="75" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">5</text>
+</svg>
