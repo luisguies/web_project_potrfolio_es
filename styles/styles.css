@@ -258,11 +258,6 @@
 }
 
 .main__abilities-title {
-  position: absolute;
-  width: 603px;
-  height: 44px;
-  left: 120px;
-  top: 640px;
 
   font-family: "Archivo Black";
   font-style: normal;
@@ -274,26 +269,23 @@
   color: #ffffff;
 }
 .main__abilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  list-style-type: none;
   flex-wrap: wrap;
-  align-items: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
-.main__abilities-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background-color: var(--card-bg);
-  border-radius: 10px;
-}
-.social-icon {
-  width: 100%;
-  height: 100%;
+.abilities__icon {
+  width: 50px;
+  height: 50px;
   object-fit: contain;
+}
+
+
+.main__abilities-list-item {
+  margin: 0;
 }
 
 /* END MAIN ABILITIES AND TOOLS */
