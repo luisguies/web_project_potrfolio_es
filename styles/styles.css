@@ -139,6 +139,13 @@
   display: block;
 }
 
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
 .header__title {
   font-family: "Archivo Black", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-style: normal;
