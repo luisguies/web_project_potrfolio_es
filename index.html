@@ -8,7 +8,7 @@
   </head>
   <body class="page">
     <header>
-      <section class="section section_title header" id="top">
+      <section class="section section__title header" id="top">
         <div class="container header__inner">
           <div class="header__container">
             <h1 class="header__title">Luis Guillermo Escobar</h1>
@@ -63,7 +63,7 @@
     <main class="main">
       <section class="section" id="skills">
         <div class="container">
-          <h2 class="section-title">Habilidades y herramientas</h2>
+          <h2 class="section__title">Habilidades y herramientas</h2>
           <ul class="main__abilities-list">
             <li class="main__abilities-list-item">
               <img
@@ -73,7 +73,11 @@
               />
             </li>
             <li class="main__abilities-list-item">
-              <img class="abilities__icon" src="./images/css3-icon.svg" alt="CSS" />
+              <img
+                class="abilities__icon"
+                src="./images/css3-icon.svg"
+                alt="CSS"
+              />
             </li>
             <li class="main__abilities-list-item">
               <img
@@ -83,7 +87,11 @@
               />
             </li>
             <li class="main__abilities-list-item">
-              <img class="abilities__icon" src="./images/git-icon.svg" alt="Git" />
+              <img
+                class="abilities__icon"
+                src="./images/git-icon.svg"
+                alt="Git"
+              />
             </li>
             <li class="main__abilities-list-item">
               <img
@@ -102,11 +110,158 @@
           </ul>
         </div>
       </section>
-      <h2 class="section-title">Proyectos destacados</h2>
-      <ul class="main__projects-list">
-        <li class="main__projects-list-item">Página web de una cafetería</li>
-        <li class="main__projects-list-item">Mi Portafolio</li>
-      </ul>
+      <section id="projects">
+        <div class="container">
+          <h2 class="section__title">Proyectos destacados</h2>
+          <ul class="projects">
+            <li class="project-card">
+              <article class="project">
+                <div class="project__image-wrapper">
+                  <img
+                    class="project__image"
+                    src="images/coffeeshop-preview.svg"
+                    alt="Vista previa del proyecto Página web de una cafetería"
+                  />
+                  <div class="project__overlay"></div>
+                  <div class="project__hover-icons">
+                    <a
+                      class="project__hover-icon"
+                      href="https://luisguies.github.io/web_project_coffeeshop_es/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ver demo en vivo"
+                    >
+                      <img src="images/demo-icon.svg" alt="Demo" />
+                    </a>
+                    <a
+                      class="project__hover-icon"
+                      href="https://github.com/luisguies/web_project_coffeeshop_es"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ver código en GitHub"
+                    >
+                      <img src="images/github-link-icon.svg" alt="GitHub" />
+                    </a>
+                  </div>
+                </div>
+                <div class="project__body">
+                  <h3 class="project__title">Página web de una cafetería</h3>
+                  <p class="project__desc">
+                    Desarrollo de una landing page responsiva para una cafetería
+                    siguiendo un brief de diseño. Incluye estructura semántica,
+                    maquetación con Flexbox, creación de secciones nuevas y un
+                    formulario de contacto funcional. Logro: Implementé desde
+                    cero el diseño completo de la página, organicé el proyecto
+                    con buenas prácticas y publiqué la versión final utilizando
+                    GitHub Pages.
+                  </p>
+                  <ul class="project__links">
+                    <li class="project__link-item">
+                      <a
+                        class="project__link"
+                        href="https://luisguies.github.io/web_project_coffeeshop_es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span
+                          class="project__link-icon project__link-icon_demo"
+                        ></span>
+                        Demo en vivo
+                      </a>
+                    </li>
+                    <li class="project__link-item">
+                      <a
+                        class="project__link"
+                        href="https://github.com/luisguies/web_project_coffeeshop_es"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span
+                          class="project__link-icon project__link-icon_github"
+                        ></span>
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="project-card">
+              <article class="project">
+                <div class="project__image-wrapper">
+                  <img
+                    class="project__image"
+                    src="images/portfolio-preview.svg"
+                    alt="Vista previa del proyecto Portafolio Web"
+                  />
+                  <div class="project__overlay"></div>
+                  <div class="project__hover-icons">
+                    <a
+                      class="project__hover-icon"
+                      href="https://luisguies.github.io/web_project_potrfolio_es/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ver demo en vivo"
+                    >
+                      <img src="images/demo-icon.svg" alt="Demo" />
+                    </a>
+                    <a
+                      class="project__hover-icon"
+                      href="https://github.com/luisguies/web_project_potrfolio_es"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Ver código en GitHub"
+                    >
+                      <img src="images/github-link-icon.svg" alt="GitHub" />
+                    </a>
+                  </div>
+                </div>
+                <div class="project__body">
+                  <h3 class="project__title">Portafolio Web</h3>
+                  <p class="project__desc">
+                    Desarrollo de un portafolio personal responsivo con diseño
+                    oscuro, estructura semántica y layout adaptativo. Incluye
+                    sección de habilidades, proyectos destacados con tarjetas
+                    interactivas y sección de contacto. Logro: Implementé el
+                    diseño completo siguiendo las especificaciones del brief,
+                    utilicé técnicas de CSS modernas (Flexbox y Grid) y aseguré
+                    la compatibilidad en múltiples resoluciones.
+                  </p>
+                  <ul class="project__links">
+                    <li class="project__link-item">
+                      <a
+                        class="project__link"
+                        href="https://luisguies.github.io/web_project_potrfolio_es/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span
+                          class="project__link-icon project__link-icon_demo"
+                        ></span>
+                        Demo en vivo
+                      </a>
+                    </li>
+                    <li class="project__link-item">
+                      <a
+                        class="project__link"
+                        href="https://github.com/luisguies/web_project_potrfolio_es"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span
+                          class="project__link-icon project__link-icon_github"
+                        ></span>
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <h2 class="footer__contact-title">Contacto</h2>
