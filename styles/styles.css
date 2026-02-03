@@ -123,14 +123,20 @@
 /* HEADER */
 
 .section__title {
-  font-family: "Archivo Black", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Archivo Black",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 44px;
   margin: 0 0 50px;
   color: var(--text-primary);
-
 }
 
 .header {
@@ -147,7 +153,14 @@
 }
 
 .header__title {
-  font-family: "Archivo Black", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Archivo Black",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -157,7 +170,14 @@
   max-width: 793px;
 }
 .header__subtitle {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -167,7 +187,14 @@
   max-width: 790px;
 }
 .header__description {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -209,7 +236,7 @@
   text-decoration: underline-gradient(var(--accent));
 }
 
-.header__actions-item-link:hover{
+.header__actions-item-link:hover {
   opacity: 0.5;
 }
 
@@ -258,7 +285,6 @@
 }
 
 .main__abilities-title {
-
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
@@ -282,7 +308,6 @@
   height: 50px;
   object-fit: contain;
 }
-
 
 .main__abilities-list-item {
   margin: 0;
@@ -316,12 +341,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-@media screen and (min-width: 1024px) {
-  .project-card {
-    max-width: 590px;
-  }
-}
-/* Exact dimensions from Figma: 590px width for project cards at 1440px */
 @media screen and (min-width: 1024px) {
   .project-card {
     max-width: 590px;
@@ -365,7 +384,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
   pointer-events: none;
   z-index: 1;
 }
@@ -427,7 +450,14 @@
 }
 
 .project__title {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -437,7 +467,14 @@
 }
 
 .project__desc {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -465,7 +502,14 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -500,7 +544,6 @@
 .project__link-icon_github {
   background-image: url("../images/github-link-icon.svg");
 }
-
 
 /* END MAIN PROJECTS */
 
@@ -541,27 +584,215 @@
   color: var(--text-primary);
 }
 .footer__social-icon {
+  display: block;
   width: 24px;
   height: 24px;
+  object-fit: contain;
 }
 .footer__social-icon-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  background-color: var(--card-bg);
-  border-radius: 10px;
+  transition: opacity 0.2s ease;
+}
+.footer__social__link:hover {
+  opacity: 0.7;
 }
 
 .footer__email {
   font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .footer__phone {
   font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 25px;
 }
 
 /* END FOOTER CONTACT */
 
 /* END FOOTER */
+
+
+/* START TABLET SPECIFIC */
+
+@media screen and (max-width: 1023px) {
+  :root {
+    --container-padding: 40px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section_title {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .header__image-container {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .header__title {
+    font-size: 58px;
+    line-height: 63px;
+    max-width: 434px;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 452px;
+    margin-bottom: 10px;
+  }
+
+  .header__description {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 452px;
+    margin-bottom: 40px;
+  }
+
+  .skills {
+    gap: 24px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    max-width: 688px;
+  }
+
+  .project__body {
+    padding: 30px;
+    min-height: auto;
+  }
+}
+
+/* END TABLET SPECIFIC */
+
+/* START MOBILE SPECIFIC */
+@media screen and (max-width: 767px) {
+  :root {
+    --container-padding: 20px;
+  }
+
+  .section {
+    padding: 20px 0;
+  }
+
+  .section_title {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .header__inner {
+    gap: 24px;
+  }
+
+  .header__image-container {
+    max-width: 280px;
+  }
+
+  .header__title {
+    font-size: 36px;
+    line-height: 39px;
+    max-width: 280px;
+    margin-bottom: 8px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 280px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .header__description {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .section__title {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .skills__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    max-width: 280px;
+  }
+
+  .project__image-wrapper {
+    padding-bottom: 57.14%; /* 160/280 = 0.5714 for mobile image height */
+  }
+
+  .project__body {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .project__title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 8px;
+  }
+
+  .project__desc {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .project__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .project__links {
+    gap: 20px;
+  }
+
+  .contact__email-link {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .social {
+    gap: 16px;
+  }
+}
+/* END MOBILE SPECIFIC */
